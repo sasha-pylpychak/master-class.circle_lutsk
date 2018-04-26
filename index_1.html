@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Сторінка %USERNAME%</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/copy.js"></script>
+</head>
+
+<body>
+    <div class="clr"></div>
+    <div class="hpd-section">
+        <div class="hpd-section__title">Базова HTML розмітка</div>
+        <p>Скачайте - установіть <a target="_blank" href="https://www.apachefriends.org/ru/index.html">XAMPP</a></p>
+        <div class="section" id="xampp">
+            <h1>Установка локального веб-сервера — XAMPP</h1>
+            <p>XAMPP является самой популярной средой разработки PHP</p>
+            <p>XAMPP полностью бесплатный и простой в установке дистрибутив Apache, содержащий MySQL, PHP и Perl. XAMPP создан с открытым исходным кодом, чтобы быть невероятно простым в установке и в использовании.</p>
+            <ol class="arabic" start="2">
+                <li>
+                    <p class="first">Запустите скачанный файл xampp&shy;win32&shy;x.x.x&shy;x&shy;xxxx&shy;installer.exe.</p>
+                </li>
+                <li>
+                    <p class="first">Нажмите Да в окне Контроль учетных записей пользователей, чтобы разрешить установку программы.</p>
+                </li>
+                <li>
+                    <p class="first">На время установки рекомендуется временно приостановить антивирус. После приостановки антивируса нажмите Yes. В некоторых случаях антивирус может препятствовать установке программного обеспечения. Если у вас в качестве антивируса запущен Microsoft Security Essentials, его можно не отключать.</p>
+                </li>
+                <li>
+                    <p class="first">Соглашаемся, что не будем устанавливать программу в C:\Program Files, и нажимаем OK. Контроль учетных записей (UAC) может ограничить некоторые функции XAMPP при установке в C:\Program Files, рекомендуется установка в директорию по умолчанию.</p>
+                </li>
+                <li>
+                    <p class="first">Нажмите Next, чтобы начать установку XAMPP.</p>
+                </li>
+                <li>
+                    <p class="first">Убедитесь, что выбраны все компоненты и нажмите Next</p>
+                </li>
+                <li>
+                    <p class="first">Выберите папку для установки XAMPP и нажмите Next. Не рекомендуется менять этот путь и не рекомендуется ставить C:\Program Files.</p>
+                </li>
+                <li>
+                    <p class="first">Уберите флажок с <strong>Learn more about Bitnami for XAMPP</strong> и нажмите <strong>Next</strong>.</p>
+                </li>
+                <li>
+                    <p class="first">Чтобы начать установку, нажмите Next.</p>
+                </li>
+                <li>
+                    <p class="first">Пожалуйста, подождите, установка XAMPP займет у вас всего несколько минут.</p>
+                </li>
+            </ol>
+            <p>12. Убедитесь, что стоит флажок [v] Do you want to start the Control Panel now? и нажмите Finish.</p>
+            <p>13. Нажмите Config для вызова настроек панели XAMPP в запущенном XAMPP Control Panel.
+            </p>
+            <p>14. В группе Autostart of modules поставить флажок [v] Apache, [v] MySQL и нажмите Save.
+            </p>
+            <ol class="arabic" start="15">
+                <li>
+                    <p class="first">Нажмите Quit, чтобы применить установленные параметры.</p>
+                </li>
+                <li>
+                    <p class="first">Нажмите <strong>Пуск → Все программы → XAMPP → XAMPP Control Panel → Правая кнопка мыши → Отправить → Рабочий стол (создать ярлык)</strong>.</p>
+                </li>
+                <li>
+                    <p class="first">Запустите XAMPP Control Panel на Рабочем столе.</p>
+                </li>
+                <li>
+                    <p class="first">Нажмите Разрешить доступ, чтобы запустить Apache HTTP Server.</p>
+                </li>
+                <li>
+                    <p class="first">Нажмите Разрешить доступ, чтобы запустить MySQL.</p>
+                </li>
+            </ol>
+            <p>20. Перейдите на localhost/xampp в браузере. Если вы видите приветственное сообщение
+                <em>Welcome to XAMPP for Windows!</em>, значит вы успешно установили среду PHP&shy;-разработки XAMPP.</p>
+            <p>залейте свой сайт в рабочую папку</p>
+        </div>
+        <div>
+            <a href="mail.txt" target="_blank">створіть у проекті файл mail.php та скопіюйте вміст цього файлу</a>
+            </br>
+            </br>
+            <a href="mail.js" target="_blank">створіть у проекті файл mail.js та скопіюйте вміст цього файлу</a>
+            <div class="hpd-code">
+                <pre>
+&lt;script src="js/mail.js">&lt;/script>
+</pre>
+            </div>
+            <p>Видаліть форму з кнопкою зі своєї сторінки та замініть на код представленний нижче
+                </br>відправити з поля на заданний ємейл</p>
+            <div class="hpd-code">
+                <pre>
+&lt;p>Залиште свій емейл, і ми вам надішлемо деталі зустрічі:&lt;/p>
+            &lt;form name="send_email_form_starts">
+              <!-- Hidden Required Fields -->
+                        &lt;input type="hidden" name="project_name" value="maslo">
+                        &lt;input type="hidden" name="admin_email" value="">
+                        &lt;input type="hidden" name="form_subject" value="Ответ с заглушки">
+                        <!-- END Hidden Required Fields -->
+              &lt;div class="form-group form-env">
+                &lt;input class="form-control" type="email" name="email" placeholder="Email" maxlength="40" required>
+                &lt;input type="submit" name="submit" value="Відправити">
+              &lt;/div>
+
+            &lt;/form>
+</pre>
+            </div>
+        </div>
+        <!-- <p><a href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjOnpmPzKHUAhVL2SwKHVLkCQsQFggkMAA&url=https%3A%2F%2Fwww.google.com%2Fwebmasters%2Ftools%2Fhome%3Fhl%3Dru&usg=AFQjCNGBHD7wrNl2CKlokhjIci98onrs_g">search console</a></p> -->
+</body>
+
+</html>

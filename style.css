@@ -1,0 +1,83 @@
+body {
+    min-width: 1200px;
+    color: #f4f4f4;
+    background-color: #00B3B9;
+    background-image: url('logo-2.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 500px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.clr {
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+
+a {
+    color: #00535A;
+    font-weight: 600;
+}
+
+.hpd-section__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.hpd-section__subtitle {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 15px 30px;
+}
+
+.hpd-code {
+    position: relative;
+    padding: 30px;
+    margin: 30px;
+    width: 1220px;
+    line-height: 40px;
+    background: rgba(60, 60, 60, 0.9);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.hpd-code__copy {
+    position: absolute;
+    padding: 0 15px;
+    bottom: 15px;
+    right: 15px;
+    background: #f4f4f4;
+    /*-webkit-border-radius: 4px;*/
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hpd-code__copy:before {
+    content: '</copy>';
+    color: #000;
+}
+
+.hpd-section__text {
+    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.nice-title {
+    font-size: 40px;
+    margin: 0 30px 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
